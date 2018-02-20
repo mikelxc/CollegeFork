@@ -1,0 +1,32 @@
+#question {
+    font-size: 1.75em;
+    padding: 0.2em;
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+.progress {
+    margin-top: 3em;
+}
+.selector {
+    display: block;
+    margin: 0 2em 0.1em 2em;
+    padding: 0.3em;
+    max-width: 100%;
+    font-size: 1.5em;
+}
+label.selector:hover {
+    background-color: #007BFC;
+    cursor: grab;
+}
+
+.btn-secondary:not([disabled]):not(.disabled).active {
+    background-color: #0069D9;
+}
+
+.continue {
+    display: block;
+    
+    margin: 5em auto 0.1em auto;
+}

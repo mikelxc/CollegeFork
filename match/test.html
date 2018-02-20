@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CollegeFork Test, the easiest way to find the college fits you best.</title>
+    <link rel="stylesheet" href="../Resources/bootstrap.min.css">
+    <script src="../Scripts/test-beta.js" defer></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href=" ../assets/brand/favicon.ico"/>
+    <!--
+		<link rel="mask-icon" href="soociao-icon.svg" color="#000000" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />-->
+</head>
+
+<body id="body">
+   <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://collegefork.com">
+          <img src="/assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          CollegeFork
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://collegefork.com/match">College Match <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com/dive">College Dive In</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Experts' Advice
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                        <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://collegefork.com/activity">Activities</a>
+                        <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="https://blog.collegefork.com">Forum</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav justify-content-end account-logo">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="login.html">
+                     <img src="/assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id = "match">
+      <div class="question" id="question">Loading the Questions</div>
+      <div class="btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary selector" id="yesLabel">
+             <input type="radio" name="yesOrNo" id="yesButton"> Yes
+          </label>
+          <label class="btn btn-secondary selector" id="noLabel">
+              <input type="radio" name="yesOrNo" id="noButton"> No
+          </label>
+      </div>
+      <input type="button" id="button" value="Continue" class="btn btn-primary continue">
+    </div>
+
+<div class="progress">
+  <div id="testprogressbar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../Resources/jquery.min.js"></script>
+        <script src="../Resources/popper.min.js"></script>
+        <script src="../Resources/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html

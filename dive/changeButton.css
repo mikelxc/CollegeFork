@@ -1,0 +1,86 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 70px;
+  bottom: 70px;
+  /* bottom: 900px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#changeButton1 {
+  border-top-left-radius: 100%;
+  outline: none;
+  border: none;
+  background-color:;
+  width: 680px;
+  height: 1060px;
+  margin-left: -342px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 0 0 3px #999;
+
+}
+
+#changeButton2 {
+  border-top-right-radius: 100%;
+  outline: none;
+  border: none;
+  background-color: #444;
+  width: 680px;
+  height: 1060px;
+  margin-left: 342px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 0 0 3px #999;
+
+}
+#changeButton1:hover {
+  background-color: ;
+
+}
+#changeButton1:active {
+  background-color: ;
+  z-index: 1;
+  box-shadow: 0 0 0 7px #ccc;
+  transform: translateY(4px);
+}
+#changeButton2:hover {
+  background-color: #111;
+
+}
+#changeButton2:active {
+  background-color: #111;
+  z-index: 1;
+  box-shadow: 0 0 0 7px #ccc;
+  transform: translateY(4px);
+}
+
+#buttonText1{
+
+  font-size: 22px;
+  margin-top: -495px;
+  margin-left: 510px;
+  color: white;
+}
+#buttonText2{
+  margin-top: -494px;
+  margin-left:-510px;
+  font-size: 20px;
+  color: white;
+}

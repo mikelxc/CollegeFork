@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--The Navigation Wheel is fully credited to jongmin kim.
+Jingkang Zhang applied it to this page with modifications. -->
+<head xmlns="http://www.w3.org/1999/html">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>CollegeFork Dive In, Learn more about your college</title>
+    <meta name="viewport" content="width=1200" />
+    <meta name="author" content="jongmin kim"/>
+    <meta name="copyright" content="jongmin kim"/>
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../Resources/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/brand/favicon.ico"/>
+
+    <style type="text/css">
+        html, body {
+            overflow-x:hidden;
+            overflow-y:hidden;
+            width:100%;
+            height:100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        #rotate-div {
+            overflow: hidden;
+            position: fixed;
+            width:100%;
+            height:100%;
+            bottom:0;
+        }
+
+
+        .chand {
+            cursor: url(images/hand.cur), move;
+        }
+        .chand:active {
+            cursor: url(images/hand-h.cur), move;
+        }
+    </style>
+
+  <link rel="stylesheet" type="text/css" href="changeButton.css" />
+
+  <script type="text/javascript" src="CMRotate.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://collegefork.com">
+        <img src="../assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        CollegeFork
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://collegefork.com">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://collegefork.com/match">College Match</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="https://collegefork.com/dive">College Dive In <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Experts' Advice
+      </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                      <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://collegefork.com/activity">Activities</a>
+                      <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://blog.collegefork.com">Forum</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="nav justify-content-end account-logo">
+              <li class="nav-item">
+                  <a class="navbar-brand" href="login.html">
+                   <img src="../assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <div id="rotate-div" class="chand"></div>
+    <!-- <input type="button" value="dispose" id="disposeButton" style="position:fixed; margin-top: -500px; margin-left: 300px;"> -->
+    <div class="footer">
+      <button id="changeButton1"><span id="buttonText1">Randomize!!!</span></button>
+      <button id="changeButton2" href="https://collegefork.com/dive/list.html"><span id="buttonText2">Show Full List</span></button>
+    </div>
+
+    <script src="changeButton.js"></script>
+    <script src="../Resources/jquery.min.js"></script>
+    <script src="../Resources/popper.min.js"></script>
+    <script src="../Resources/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CollegeFork School , the easiest way to find the college fits you best.</title>
+    <script src="../Resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Resources/bootstrap.min.css">
+    <script src="../Scripts/filter-beta.js" defer></script>
+    <link rel="stylesheet" href="../Resources/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="SSF.css">
+    <link rel="shortcut icon" href=" ../assets/brand/favicon.ico" />
+    <script src="../Resources/tooltipster.bundle.min.js"></script>
+    <script src="../Resources/chart.js"></script>
+    <script src="../Resources/canvasjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="skewButton.css" />
+    <link rel="stylesheet" type="text/css" href="csshake.min.css" />
+    <script src="background.js" defer></script>
+    <script src="particles.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Resources/tooltipster-sideTip-noir.min.css">
+    <link rel="stylesheet" type="text/css" href="../Resources/tooltipster-sideTip-shadow.min.css">
+
+  <script>
+        // $(document).ready(function() {
+        //     $('.tooltip').tooltipster();
+        // });
+
+        $(document).ready(function() {
+          $('.tooltip').tooltipster({
+            theme: 'tooltipster-noir'
+          });
+
+          $('.tooltip-text').tooltipster({
+            theme: 'tooltipster-shadow'
+          });
+        });
+
+  </script>
+    <style>
+        #downrightpart {
+            margin-top: -20px;
+        }
+        #slidersContainer p{
+            line-height: 0.75;
+        }
+        .intro {
+            margin-top: -30px;
+            text-align: center;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body leftmargin=0 topmargin=0 oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://collegefork.com">
+          <img src="/assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          CollegeFork
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://collegefork.com/match">College Match <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com/dive">College Dive In</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Experts' Advice
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                        <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="https://blog.collegefork.com">Forum</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav justify-content-end account-logo">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="login.html">
+                     <img src="/assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div id="bodyContainer">
+  <div id="formContents">
+    <div class="tooltipContents"> 
+      <span id="scoreSectionTip" class="tipContentHTML">
+        Though test score is not everything, feel free to tell us your academic strengths to help us find you the right place.
+      </span>
+
+      <span id="sliderSectionTip" class="tipContentHTML">
+        Drag the sliders below according to how important it is to you.
+      </span>
+
+      <span id="sliderTip-ranking" class="tipContentHTML">
+        While ranking is not everything, how much does US News school ranking mean to you?
+      </span>
+
+      <span id="sliderTip-location" class="tipContentHTML">
+        Many collges are located in less advantagious areas but have strong academics. How much do you value a good campus location?
+      </span>
+
+      <span id="sliderTip-SFRatio" class="tipContentHTML">
+        When an academic difficulty occurs, ask for your teacher’s advice! How much does a low student-faculty ratio mean to you?
+      </span>
+
+      <span id="sliderTip-classSize" class="tipContentHTML">
+        “A little body often harbors a great soul.” Scroll the button to the right if you love small classes (with under 20 students, for example).
+      </span>
+
+      <span id="sliderTip-internationalStudents" class="tipContentHTML">
+        A higher score in this section if you cherish a diverse student body with more international students from different culture backgrounds.
+      </span>
+
+      <span id="sliderTip-partyCulture" class="tipContentHTML">
+        Many schools are known for their high-quality parties! How much do you value party culture in college?
+      </span>
+
+      <span id="sliderTip-safety" class="tipContentHTML">
+        Safety is always the top priority. Mark a higher score for this one if you agree on that.
+      </span>
+
+      <span id="sliderTip-studentLife" class="tipContentHTML">
+        College life is not just about studying. How much does a varied and colorful student life mean to you?
+      </span>
+
+      <span id="sliderTip-athletics" class="tipContentHTML">
+        Hooray! Let’s cheer for our team! Do you expect strong sport spirit within your future college?
+      </span>
+
+      <span id="sliderTip-dorms" class="tipContentHTML">
+        It’s okay to be kind of picky when it comes to your living space. How does a comfy dorm environment mean to you?
+      </span>
+
+      <span id="sliderTip-campusFood" class="tipContentHTML">
+        Do you consider food quality as an essential factor when choosing your college?
+      </span>
+
+      <span id="sliderTip-campus" class="tipContentHTML">
+        It’s great to spend your next four years in a beautiful campus. How much do you value the environment on your campus?
+      </span>
+    </div>
+
+    <div id="upperPart">
+      <div class="fluid">
+            <div class="container">
+            <h1 class="display-4">School Filter Form by Collegefork</h1>
+            <br>
+                 <p class="intro">If you are using a small screen device, we recomend you to use our <a href="filter-mobile.html" style="color: blue">mobile mode</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="downPart">
+      <div id="downLeftPart">
+        <div id="collegeList">
+          Adjust the control panel to the right and click "update" to see customized college ranking and statistics.
+        </div>
+
+
+      </div>
+
+      <div id="downMiddlePart">
+        <div id="doughnutContainer"></div>
+        <div id="stackedBarContainer"></div>
+      </div>
+
+      <div id="downRightPart">
+
+        <div class="controlPanelExplanation">
+          <span class="tooltip" data-tooltip-content="#sliderSectionTip"></span>
+          <h2  id="shakyh2" class="shake-slow">Customize Your Rules!</h2>
+        </div>
+        <div id="ctrlPanelSliderSection">   <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+
+          <div id="slidersContainer">  <!--<p><span class="tooltip" data-tooltip-content=""> </span>
+            <input type="range" min="0" max="100" value="0" class="slider" id="range-"></p> -->
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-ranking">US News Ranking: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-ranking" data-name="ranking"><span class="sliderValue" id="sliderValue-ranking">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-location">Campus Location: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-location" data-name="location"><span class="sliderValue" id="sliderValue-location">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-SFRatio">Student-Faculty Ratio: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-studentFacultyRatio" data-name="student faculty ratio">  <span class="sliderValue" id="sliderValue-SFRatio">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-classSize">Class Size: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-classSize" data-name="class size">  <span class="sliderValue" id="sliderValue-classSize">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-internationalStudents">International Students Ratio: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-internationalStudentsRatio" data-name="international students ratio">  <span class="sliderValue" id="sliderValue-internationalStudents">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-partyCulture">Party Culture: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-partyCulture"  data-name="party culture">  <span class="sliderValue" id="sliderValue-partyCulture">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-safety">Safety: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-safety" data-name="safety"><span class="sliderValue" id="sliderValue-safety">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-studentLife">Student Life: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-studentLife" data-name="student life"><span class="sliderValue" id="sliderValue-studentLife">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-athletics">Athletics: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-athletics" data-name="athletics"><span class="sliderValue" id="sliderValue-athletics">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-dorms">Dorms: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-dorms" data-name="dorms"><span class="sliderValue" id="sliderValue-dorms">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-campusFood">Campus Food: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-campusFood" data-name="campus food">  <span class="sliderValue" id="sliderValue-campusFood">0</span>
+            </p>
+
+            <p class="sliderRow"><span class="tooltipTextContainer"><span class="tooltip-text" data-tooltip-content="#sliderTip-campus">Campus: </span></span>
+              <input type="range" min="0" max="100" value="0" class="slider" id="range-campus" data-name="campus">  <span class="sliderValue" id="sliderValue-campus">0</span>
+            </p>
+
+          </div>
+          <div id="majorContainer">
+            <div class="">
+              <span>First Choice Major: </span> <select id="firstMajor" class="majorSelectBox"><option value="None">None</option></select>
+              <div class="majorSlider" id="majorSliderFirst"><input type="range" min="0" max="200" value="200" class="slider slider-major" id="majorRangeFirst" data-name="">  <span class="sliderValue" id="">200</span></div>
+            </div>
+            <div class="">
+              <span>Alternate Major #1: </span> <select id="secondMajor" class="majorSelectBox"><option value="None">None</option></select>
+              <div class="majorSlider" id="majorSliderSecond"><input type="range" min="0" max="200" value="100" class="slider slider-major" id="majorRangeSecond" data-name="">  <span class="sliderValue" id="">100</span></div>
+            </div>
+            <div class="">
+              <span>Alternate Major #2: </span> <select id="thirdMajor" class="majorSelectBox"><option value="None">None</option></select>
+              <div class="majorSlider" id="majorSliderThird"><input type="range" min="0" max="200" value="50" class="slider slider-major" id="majorRangeThird" data-name="">  <span class="sliderValue" id="">50</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="ctrlPanelButtonSection">
+          <div id="buttonSection">
+            <input type="button" value="Update" class="btn-sm btn-primary" id="updateButton">
+            <input type="button" value="Reset" class="btn-sm btn-primary" id="resetButton">
+            <br>
+            <div id="skewButtonContainerskewButtonContainer">
+              <div class="tg-list-item">
+                <p id="skewedButtonTitle"></p>
+                <div id="skewButton">
+                  <input class="tgl tgl-skewed" id="cb3" type="checkbox" checked="true"/>
+                  <label class="tgl-btn" data-tg-off="FXs" data-tg-on="FXs" for="cb3"></label>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <div id="particles-js">
+  </div>
+</div>
+</div>
+</body>
+</html>

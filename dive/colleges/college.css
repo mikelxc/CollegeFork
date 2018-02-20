@@ -1,0 +1,122 @@
+html body {
+	background: #fff;
+    position: relative; 
+    width: 100%;
+}
+
+.college-logo {
+	position:relative;
+    z-index: 1;
+	max-width: 10rem;
+	top:31vh;
+	left:5vw;
+    background-color: white;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.college-banner{
+    z-index: -1;
+    margin-top: -20vh;
+    width: 100%;
+	height: 40vh;	
+    position:relative;
+}
+.college-name {
+    position:absolute;
+    color: white;
+    padding-top: 27.5vh;
+    margin-top: 5vh;
+}
+.information-text {
+    margin-top: 1em;
+    text-align: center;
+    color: #306EAA;
+    line-height: 0.75em;
+}
+.card {
+    border-radius: 0;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+.school-info {
+    margin: auto;
+    display: block;
+    float: right;
+    right: 3em;
+    position: relative;
+    overflow-y: scroll;
+    width: 1000px;
+    max-width: 85vw;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow: hidden;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+.scroll {
+  height: 100vh;
+  overflow: scroll;
+  position: relative
+  padding: 0 10px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* The sticky */
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+  z-index: 1;
+}
+.school-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    display: inline-block;
+    float: left;
+    margin-left: 2em;
+    min-width: 220px;
+    width: 15vw;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    
+}

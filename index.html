@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Resources/bootstrap.min.css">
+    <link rel="shortcut icon" href="/assets/brand/favicon.ico"/>
+    <title>CollegeFork, Fork your college. The best place for school research</title>
+    <style>
+        body {
+            background-color: #EEE8FB;
+        }
+        .title {
+            padding-left: 2em;
+        }
+        .brandname{
+            color:#4830F2;
+            font-family: Calibri; 
+        }
+        .decorarionline {
+            height: 1px;
+            background-color: #4830F2;
+        }
+        .title-page {
+            max-width: 800px;
+            width: 90%;
+            margin: auto;
+            margin-top: 2em;
+            color: #4B4C4D;
+        }
+        .title-page ul li{
+            list-style-position: inside; 
+            text-decoration: none;
+            list-style: none;
+            line-height: 30px;
+        }
+        .title-page ul li a{
+            color: #4B4C4D;
+        }
+        .card {
+            margin: -10px;
+            box-shadow: 1px 1px 15px grey;
+            margin-bottom: 1.5em;
+        }
+        
+        .card-img-top {
+            margin: 1em;
+            padding: 1.2em;
+            width: 90%;
+            max-width: 100px;
+        }
+        @media (max-width: 575.98px) {
+            h1 {
+                font-size: 20px;
+            }
+            figcaption {
+                margin-top: -20px;
+            }
+        }
+        
+figure.hover-effect img {
+	max-width: none;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,10px, 10px);
+	transform: translate3d(0,10px,10px);
+}
+figure.hover-effect figcaption {
+	text-align: center;
+}
+
+figure.hover-effect figcaption > div {
+	position: absolute;
+	bottom: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.hover-effect h2,
+figure.hover-effect p {
+    color: #4B4C4D;
+	-webkit-transform: translate3d(0,10px,10px);
+	transform: translate3d(0, 10px,10px);
+}
+
+figure.hover-effect h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.hover-effect p {
+	color: #4B4C4D;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.hover-effect:hover img,
+figure.hover-effect:hover p {
+	opacity: 1;
+}
+
+figure.hover-effect:hover img,
+figure.hover-effect:hover h2,
+figure.hover-effect:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.hover-effect:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+    </style>
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand title" href="https://collegefork.com">
+          <img src="/assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          <span class="brandname">CollegeFork</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://collegefork.com">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com/match">College Match</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://collegefork.com/dive">College Dive In</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Experts' Advice
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                        <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://collegefork.com/activity">Activities</a>
+                        <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.collegefork.com">Forum</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav justify-content-end account-logo">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="login.html">
+                     <img src="/assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>-->
+    </nav>
+
+<div class="decorarionline"></div>
+    <div class="title-page">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="card-title">Welcome to CollegeFork</h1>
+                   <hr class="my-4">
+                  <ul>
+                      <li class="no-decoration">A platform to help you get rid of</li>
+                      <li><a href="#">-test pressure</a></li>
+                      <li><a href="#">-college choice confusion</a></li>
+                      <li><a href="#">-activities planning problems</a></li>
+                      <li class="no-decoration">and all other obstacles in your way to dream schools</li>
+                  </ul>
+              </div>
+            </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                        <figure class="hover-effect">
+                  <a href="https://blog.collegefork.com"><img class="card-img-top" src="/assets/decoration/1.svg" alt="Expert's Advice image"></a>
+                        <figcaption>
+                        <div>
+                            <a href="https://blog.collegefork.com">
+                            <h2>Expert's Advices</h2>
+                            <p>The best place to learn from experts</p>
+                                </a>
+                        </div>
+                            <a href="#"></a>
+                        </figcaption>
+                        </figure>
+                </div>
+            </div>
+            <div class="col-6">
+            <div class="card">
+                  <figure class="hover-effect">
+                  <a href="https://collegefork.com/dive"><img class="card-img-top" src="/assets/decoration/2.svg" alt="Explore College image"></a>
+                        <figcaption>
+                        <div>
+                            <a href="https://collegefork.com/dive"> 
+                            <h2>Explore Colleges</h2>
+                            <p>The best place to explore your college choice</p>
+                            </a>     
+                        </div>
+                            <a href="#"></a>
+                        </figcaption>
+                        </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                  <figure class="hover-effect">
+                      <a href="https://collegefork.com/match/filter.html"><img class="card-img-top" src="/assets/decoration/3.svg" alt="College Filter image"></a>
+                        <figcaption>
+                        <div>
+                            <a href="https://collegefork.com/match/filter.html">
+                            <h2>College Filter</h2>
+                            <p>The best place to create your customized college ranking</p>
+                                </a>
+                        </div>
+                            <a href="#"></a>
+                        </figcaption>
+                        </figure>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <figure class="hover-effect">
+                        <a href="https://collegefork.com/match"><img class="card-img-top" src="/assets/decoration/4.svg" alt="College Match image"></a>
+                        <figcaption>
+                            <div>
+                                <a href="https://collegefork.com/match">
+                                <h2>College Match</h2>
+                                <p>The best place to find your best fit college.</p>
+                                    </a>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="/Resources/jquery.min.js"></script>
+        <script src="/Resources/popper.min.js"></script>
+        <script src="/Resources/bootstrap.min.js"></script>
+</body>
+
+</html>
