@@ -191,7 +191,6 @@
     for(school of schoolsToOutput){
       htmlResult += '<p class="lead">';
       htmlResult += school;
-      htmlResult += school;
       htmlResult += "<br>";
     }
       htmlResult += "</p>";
