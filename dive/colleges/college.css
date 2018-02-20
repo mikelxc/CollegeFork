@@ -1,13 +1,14 @@
 html body {
-	background: #fff;
-    position: relative; 
+		background: #fff;
+    position: relative;
     width: 100%;
+		overflow-x: hidden;
 }
 
 .college-logo {
 	position:relative;
     z-index: 1;
-	max-width: 10rem;
+	max-width: 160px;
 	top:31vh;
 	left:5vw;
     background-color: white;
@@ -21,14 +22,17 @@ html body {
     z-index: -1;
     margin-top: -20vh;
     width: 100%;
-	height: 40vh;	
+		height: 40vh;
     position:relative;
+		background-repeat:no-repeat, no-repeat;
+    background-position:center;
 }
 .college-name {
     position:absolute;
     color: white;
     padding-top: 27.5vh;
     margin-top: 5vh;
+		text-shadow: 1px 1px 2px black;
 }
 .information-text {
     margin-top: 1em;
@@ -52,63 +56,11 @@ html body {
     max-width: 85vw;
 }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-html,
-body {
-  overflow: hidden;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
-.scroll {
-  height: 100vh;
-  overflow: scroll;
-  position: relative
-  padding: 0 10px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-/* The sticky */
-.sidebar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 15px;
-  z-index: 1;
-}
 .school-nav {
-    position: -webkit-sticky;
-    position: sticky;
+		position: -webkit-sticky;
+		position: sticky;
     top: 15px;
+		left: 20px;
     display: inline-block;
     float: left;
     margin-left: 2em;
@@ -116,7 +68,56 @@ body {
     width: 15vw;
     overflow: hidden;
 }
-
-@media (max-width: 768px) {
-    
+#navbar.sticky {
+	left: 0;
+	position: fixed;
+	top: 10vh;
+}
+@media (max-width: 1300px) {
+	.school-info {
+		 width: 900px;
+	}
+}
+@media (max-width: 1200px) {
+	.school-info {
+		 width: 800px;
+	}
+}
+@media (max-width: 1100px) {
+	.school-info {
+		width:700px;
+	}
+}
+@media (max-width: 1000px) {
+	.school-info {
+		width:600px;
+	}
+}
+@media (max-width: 900px) {
+	.school-info {
+		width:500px;
+		margin-right: -20px;
+	}
+	.school-nav {
+		width: 180px;
+	}
+}
+@media (max-width: 780px) {
+	.school-nav {
+		display: none;
+	}
+	.school-info {
+		width: 92vw;
+	}
+	.college-name {
+		margin-top:-20vh;
+	}
+}
+@media (max-width: 576px) {
+	.college-logo  {
+		opacity: 0;
+	}
+	.college-name {
+		margin-left: 20px;
+	}
 }
