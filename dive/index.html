@@ -11,7 +11,7 @@ Jingkang Zhang applied it to this page with modifications. -->
     <meta name="copyright" content="jongmin kim"/>
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="../Resources/bootstrap.min.css">
-    <link rel="shortcut icon" href="../assets/brand/favicon.ico"/>
+    <link rel="shortcut icon" href="../assets/brand/favicon.ico" />
 
     <style type="text/css">
         html, body {
@@ -47,6 +47,10 @@ Jingkang Zhang applied it to this page with modifications. -->
         .chand:active {
             cursor: url(images/hand-h.cur), move;
         }
+        #navB {
+          z-index: 3;
+        }
+
     </style>
 
   <link rel="stylesheet" type="text/css" href="changeButton.css" />
@@ -55,57 +59,59 @@ Jingkang Zhang applied it to this page with modifications. -->
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="https://collegefork.com">
-        <img src="../assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        CollegeFork
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="https://collegefork.com">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://collegefork.com/match">College Match</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="https://collegefork.com/dive">College Dive In <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Experts' Advice
-      </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
-                      <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="https://collegefork.com/activity">Activities</a>
-                      <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://blog.collegefork.com">Forum</a>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <ul class="nav justify-content-end account-logo">
-              <li class="nav-item">
-                  <a class="navbar-brand" href="login.html">
-                   <img src="../assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </nav>
 
     <div id="rotate-div" class="chand"></div>
     <!-- <input type="button" value="dispose" id="disposeButton" style="position:fixed; margin-top: -500px; margin-left: 300px;"> -->
+    <div id="navB">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="https://collegefork.com">
+            <img src="../assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            CollegeFork
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://collegefork.com">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://collegefork.com/match">College Match</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="https://collegefork.com/dive">College Dive In <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Experts' Advice
+          </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                          <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="https://collegefork.com/activity">Activities</a>
+                          <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://blog.collegefork.com">Forum</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <ul class="nav justify-content-end account-logo">
+                  <li class="nav-item">
+                      <a class="navbar-brand" href="login.html">
+                       <img src="../assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </div>
     <div class="footer">
       <button id="changeButton1"><span id="buttonText1">Randomize!!!</span></button>
       <button id="changeButton2" href="https://collegefork.com/dive/list.html"><span id="buttonText2">Show Full List</span></button>
