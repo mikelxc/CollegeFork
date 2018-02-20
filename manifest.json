@@ -1,0 +1,15 @@
+{
+  "short_name": "CollegeFork",
+  "name": "CollegeFork",
+  "icons": [
+    {
+      "src":"assets/brand/collegefork.svg",
+      "sizes": "",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#EEE8FB",
+  "Theme_color": "#4830F2",
+  "display": "standalone"
+}

@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Resources/bootstrap.min.css"/>
     <link rel="shortcut icon" href="assets/brand/favicon.ico"/>
@@ -261,6 +262,17 @@ figure.hover-effect:hover p {
         <script src="Resources/jquery.min.js"></script>
         <script src="Resources/popper.min.js"></script>
         <script src="Resources/bootstrap.min.js"></script>
+        <script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
 </body>
 
 </html>
