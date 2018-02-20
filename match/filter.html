@@ -14,9 +14,8 @@
     <script src="../Resources/chart.js"></script>
     <script src="../Resources/canvasjs.min.js"></script>
     <link rel="stylesheet" type="text/css" href="skewButton.css" />
-    <link rel="stylesheet" type="text/css" href="csshake.min.css" />
     <script src="background.js" defer></script>
-    <script src="../Resources/particles.min.js"></script>
+    <script src="particles.js"></script>
     <link rel="stylesheet" type="text/css" href="../Resources/tooltipster-sideTip-noir.min.css">
     <link rel="stylesheet" type="text/css" href="../Resources/tooltipster-sideTip-shadow.min.css">
 
@@ -52,55 +51,56 @@
 </head>
 
 <body leftmargin=0 topmargin=0 oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
-    <!--nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="https://collegefork.com">
-          <img src="/assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-          CollegeFork
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://collegefork.com">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://collegefork.com/match">College Match <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://collegefork.com/dive">College Dive In</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Experts' Advice
-        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
-                        <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="https://blog.collegefork.com">Forum</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="nav justify-content-end account-logo">
-                <li class="nav-item">
-                    <a class="navbar-brand" href="login.html">
-                     <img src="/assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
 <div id="bodyContainer">
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://collegefork.com">
+        <img src="assets/brand/collegefork.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        CollegeFork
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://collegefork.com">Home</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="https://collegefork.com/match">College Match <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://collegefork.com/dive">College Dive In</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Experts' Advice
+      </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://collegefork.com/application">Application</a>
+                      <a class="dropdown-item" href="https://collegefork.com/test">Standard Test</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://collegefork.com/summerschool">Summer School Special Section</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" href="https://blog.collegefork.com">Forum</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="nav justify-content-end account-logo">
+              <li class="nav-item">
+                  <a class="navbar-brand" href="login.html">
+                   <img src="assets/brand/account.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
   <div id="formContents">
     <div class="tooltipContents">
       <span id="scoreSectionTip" class="tipContentHTML">
@@ -165,7 +165,7 @@
             <div class="container">
             <h1 class="display-4">School Filter Form by Collegefork</h1>
             <br>
-                 <p class="intro">If you are using a small screen device, we recomend you to use our <a href="filter-mobile.html" style="color: blue">mobile mode</a></p>
+                 <p class="intro">If you are using a small screen device, we recommend you to use our <a href="filter-mobile.html" style="color: blue">mobile mode</a></p>
             </div>
         </div>
     </div>
@@ -245,15 +245,15 @@
           <div id="majorContainer">
             <div class="">
               <span>First Choice Major: </span> <select id="firstMajor" class="majorSelectBox"><option value="None">None</option></select>
-              <div class="majorSlider" id="majorSliderFirst"><input type="range" min="0" max="200" value="200" class="slider slider-major" id="majorRangeFirst" data-name="">  <span class="sliderValue" id="">200</span></div>
+              <div class="majorSlider" id="majorSliderFirst"><input type="range" min="0" max="200" value="200" class="slider slider-major" id="majorRangeFirst" data-name="">  <span class="sliderValue sliderValue-major" id="">200</span></div>
             </div>
             <div class="">
               <span>Alternate Major #1: </span> <select id="secondMajor" class="majorSelectBox"><option value="None">None</option></select>
-              <div class="majorSlider" id="majorSliderSecond"><input type="range" min="0" max="200" value="100" class="slider slider-major" id="majorRangeSecond" data-name="">  <span class="sliderValue" id="">100</span></div>
+              <div class="majorSlider" id="majorSliderSecond"><input type="range" min="0" max="200" value="100" class="slider slider-major" id="majorRangeSecond" data-name="">  <span class="sliderValue sliderValue-major" id="">100</span></div>
             </div>
             <div class="">
               <span>Alternate Major #2: </span> <select id="thirdMajor" class="majorSelectBox"><option value="None">None</option></select>
-              <div class="majorSlider" id="majorSliderThird"><input type="range" min="0" max="200" value="50" class="slider slider-major" id="majorRangeThird" data-name="">  <span class="sliderValue" id="">50</span></div>
+              <div class="majorSlider" id="majorSliderThird"><input type="range" min="0" max="200" value="50" class="slider slider-major" id="majorRangeThird" data-name="">  <span class="sliderValue sliderValue-major" id="">50</span></div>
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@
               <div class="tg-list-item">
                 <p id="skewedButtonTitle"></p>
                 <div id="skewButton">
-                  <input class="tgl tgl-skewed" id="cb3" type="checkbox" checked="true"/>
+                  <input class="tgl tgl-skewed" id="cb3" type="checkbox" checked="true">
                   <label class="tgl-btn" data-tg-off="FXs" data-tg-on="FXs" for="cb3"></label>
                 </div>
               </div>
@@ -277,8 +277,9 @@
 
     </div>
   </div>
-  <div id="particles-js">
+
   </div>
+  <div id="particles-js">
 </div>
 </div>
 </body>
