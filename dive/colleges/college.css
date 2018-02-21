@@ -121,3 +121,9 @@ html body {
 		margin-left: 20px;
 	}
 }
+.premium .subtitle {
+	color: gold;
+}
+.nav-pills .nav-link.active.premium {
+	background-color: gold;
+}
