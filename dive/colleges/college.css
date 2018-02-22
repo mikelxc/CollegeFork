@@ -59,7 +59,7 @@ html body {
 .school-nav {
 		position: -webkit-sticky;
 		position: sticky;
-    top: 15px;
+    top: 35px;
 		left: 20px;
     display: inline-block;
     float: left;
@@ -126,4 +126,68 @@ html body {
 }
 .nav-pills .nav-link.active.premium {
 	background-color: gold;
+}
+
+#addbutton{
+	margin-bottom: 20px;
+}
+.subtitle{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color: #444;
+}
+
+.card{
+	/*stitching*/
+	margin-top: 20px;
+	outline: 1px dashed #98abb9;
+	outline-offset: -5px;
+	background-color: #f1f8fe;
+	/* margin: 100px auto; */
+}
+
+
+
+#rankingsContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#overview{
+	padding: 6px;
+	padding-bottom: 0;
+}
+.Ranking-num {
+	display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  color: #fafaf9;
+  font-size: 60px;
+/*   text-transform: uppercase; */
+  font-weight: 600;
+  background-color: #f75c89;
+	font-family: "Gill Sans", sans-serif;
+	margin: 20px;
+	margin-left: 0;
+
+	/* border: 2px dashed #999;
+	-webkit-box-shadow: 2px 2px 2px #000;
+	-moz-box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px #000; */
+	float: left;
+}
+
+.Ranking-text{
+	/* display: block; */
+	line-height: 140px;
+	font-size: 24px;
+	font-family: Helvetica, sans-serif;
+	font-weight: 2em;
+	text-align: center;
+	/* text-shadow: rgba(0, 0, 0, .15) 4px 4px 4px; */
+	color: #353535;
 }

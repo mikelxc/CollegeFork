@@ -16,8 +16,6 @@
     /* background-image: url(banner.png); */
     background-size: cover;
   }
-  .subtitle{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-  color: #4B44F1;}
   </style>
  </head>
  <body data-offset="100" data-spy="scroll" data-target="#schooldetail">
@@ -113,7 +111,7 @@
 Cambridge, MA 02138</span>
     </p>
     <a class="btn btn-primary btn-lg" href="https://collegefork.com/dive/colleges/Harvard-University/index.html#" role="button">
-     Add to My School
+     Add to My Schools
     </a>
    </div>
   </div>
@@ -124,7 +122,7 @@ Cambridge, MA 02138</span>
       OVERVIEW
      </a>
      <a class="nav-link" href="#ranking">
-      RANKING
+      RANKINGS
      </a>
      <a class="nav-link" href="#admission">
       ADMISSION
@@ -167,26 +165,31 @@ With an enduring dedication to the pursuit of excellence, Harvard University off
    <div class="card" id="ranking">
     <div class="card-body">
      <h3 class="subtitle">
-      RANKING
+      RANKINGS
      </h3>
-     <div id="Ranking1">
-      <span data-columnname-ranking="Ranking1">
-       1
-      </span>
-      in
-      <span data-columnname-ranking="Ranking1-name">
-       History
-      </span>
-     </div>
-     <br/>
-     <div id="Ranking2">
-      <span data-columnname-ranking="Ranking2">
-       1
-      </span>
-      in
-      <span data-columnname-ranking="Ranking2-name">
-       Medicine
-      </span>
+     <div id="rankingsContainer">
+      <div class="Ranking-line" id="Ranking1">
+       <span class="Ranking-num" data-columnname-ranking="Ranking1">
+        1
+       </span>
+       <span class="Ranking-text">
+        in
+        <span class="Ranking-text" data-columnname-ranking="Ranking1-name">
+         History
+        </span>
+       </span>
+      </div>
+      <div class="Ranking-line" id="Ranking2">
+       <span class="Ranking-num" data-columnname-ranking="Ranking2">
+        1
+       </span>
+       <span class="Ranking-text">
+        in
+        <span data-columnname-ranking="Ranking2-name">
+         Medicine
+        </span>
+       </span>
+      </div>
      </div>
     </div>
    </div>
