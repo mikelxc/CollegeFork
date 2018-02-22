@@ -1,8 +1,8 @@
-<?php 
+<?php
   // Allow the config
   define('__CONFIG__', true);
   // Require the config
-  require_once "inc/config.php"; 
+  require_once "inc/config.php";
 
   Page::ForceDashboard();
 ?>
@@ -57,13 +57,9 @@
                     <a class="nav-link" href="https://blog.collegefork.com">Forum</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
-    
+
   <div class="container signin-container">
     <div class="row">
       <div class="col"></div>
@@ -80,6 +76,9 @@
               </div>
               <div class="form-group">
                 <input type="password" class="form-control" id="repasswordInput" required="required" placeholder="Retype Your Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="referralCode" required="required" placeholder="Referral Code">
               </div>
               <div class="alert alert-danger js-error" style='display: none;'></div>
               <button type="submit" class="btn signin-btn btn-lg btn-primary">Sign Up</button>
@@ -98,7 +97,7 @@
 
   </div>
 
-<?php require_once "inc/footer.php"; ?> 
+<?php require_once "inc/footer.php"; ?>
 </body>
 
 </html>
