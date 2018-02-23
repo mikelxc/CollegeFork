@@ -74,12 +74,6 @@
           text-align: center;
           font-family: sans-serif;
         }
-        @media (max-width: 575.98px) {
-            figure h2 {
-                font-size: 20px;
-                margin-top: -50px;
-            }
-        }
         .footer {
           margin-top: -20px;
           background-color: rgb(200,200,200);
@@ -173,8 +167,7 @@
 
         h1.slogan {
           font-family: marvel;
-          display: block;
-          margin: auto;
+          display: inline-block;
           margin-bottom: 1.2em;
           font-size: 3.2em;
         }
@@ -202,6 +195,16 @@
         .ads img {
           max-width: 200px;
         }
+        img.go-collegefork {
+          display: inline-block;
+          float: right;
+          width: 30%;
+        }
+        img.link {
+          width: 60%;
+          display: block;
+          margin: auto;
+        }
         @media (max-width:1355px) {
           figcaption a h2 {
             margin-top: -30px;
@@ -221,6 +224,34 @@
             width: 300px;
             margin-left: 20px;
           }
+        }
+        @media (max-width: 589px) {
+            figure h2 {
+                font-size: 20px;
+                margin-top: -50px;
+            }
+            h1.slogan {
+              font-size: 35px;
+            }
+            .why .lead {
+              font-size: 1.3em;
+              padding-left: 1em;
+            }
+            .why ul{
+              margin-left: 0;
+              font-size: 1.1em;
+            }
+          }
+        @media (max-width: 413px) {
+            h1.slogan {
+              font-size: 30px;
+            }
+            figure h2 {
+                font-size: 18px;
+            }
+            figure p {
+              font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -274,17 +305,16 @@
 
 <div class="decorarionline"></div>
     <div class="title-page">
-      <div class="row">
-        <div class="col-md-12 col-lg-6">
           <div class="card welcome">
             <div class="card-body">
               <h1 class="card-title">Welcome to </h1><img class="link" src="assets/brand/link.svg" alt="collegefork link">
                  <hr class="my-4">
               <h1 class="slogan">At <b>CollegeFork</b>,<br> we define <br><i>college application</i> <br>in a <b>brand new way</b>.</h1>
-              <!-- <a href="login.php"><img class="login" src="assets/brand/log-in.svg" alt="log-in" title="click to log in to your account"></a> -->
+              <img class="go-collegefork" src="assets/decoration/go-collegefork.svg" alt="go CollegeFork" title="CollegeFork, Fork your college.">
             </div>
           </div>
-        </div>
+      <div class="row">
+        <div class="col"></div>
         <div class="col-lg-6 col-md-12">
           <div class="features">
             <div class="row">
@@ -357,6 +387,7 @@
             </div>
           </div>
         </div>
+        <div class="col"></div>
       </div>
         <div class="card why">
           <div class="card-body">
