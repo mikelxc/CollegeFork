@@ -11,6 +11,9 @@
     <link rel="shortcut icon" href="assets/brand/favicon.ico"/>
     <title>CollegeFork, the one end destination for your college research</title>
     <style>
+        html {
+          overflow-y: hidden;
+        }
         :root {
           --theme:rgb(0,113,188);
         }
@@ -245,6 +248,14 @@
             margin-right: -10em;
           }
         }
+        @media (max-width:713px) {
+          .footer {
+            font-size: 12px;
+          }
+          footer ul li img {
+              width: 35px;
+          }
+        }
         @media (max-width:700px) {
           img.link {
             display: inline-block;
@@ -282,6 +293,12 @@
             img.go-collegefork {
               width: 70%;
             }
+            .footer {
+              font-size: 10px;
+            }
+            footer ul li img {
+                width: 30px;
+            }
           }
         @media (max-width:500px) {
           .welcome h1 {
@@ -302,7 +319,7 @@
             display: block;
           }
           h1.slogan.topslogan {
-            margin-right: -10em;
+            margin-right: -5em;
           }
         }
         @media (max-width: 413px) {
