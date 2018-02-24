@@ -81,11 +81,14 @@
                 <input type="password" class="form-control" id="referralCode" required="required" placeholder="Referral Code">
               </div>
               <div class="alert alert-danger js-error" style='display: none;'></div>
-              <button type="submit" class="btn signin-btn btn-lg btn-primary">Sign Up</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#error">
+                Sign Up
+              </button>
+              <!-- <button type="submit" class="btn signin-btn btn-lg btn-primary">Sign Up</button> -->
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> I agree to the <a href="https://collegefork.com/terms"> terms and conditions.</a>
-                    <br><a href="https://collegefork.com/help"> Need Help?</a></label>
+                  <input class="form-check-input" type="checkbox"> I agree to the <a href="https://collegefork.com/terms.html"> terms and conditions.</a>
+                    <br><a href="https://collegefork.com/help.html"> Need Help?</a></label>
               </div>
             </form>
           </div>
@@ -96,7 +99,24 @@
     </div>
 
   </div>
-
+  <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="errorLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Can't sign up right now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Sorry, since we are in the beta phase, registrations is only limited to invited members. Please <a href="mailto:system@collegefork.com">send an email to us</a> to request an account.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php require_once "inc/footer.php"; ?>
 </body>
 
