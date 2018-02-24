@@ -80,7 +80,7 @@
               <button class="btn signin-btn btn-lg btn-primary" type="submit">Sign In</button>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember me<a href="https://collegefork.com/help"> Need Help?</a></label>
+                  <input class="form-check-input" type="checkbox"> Remember me<a href="https://collegefork.com/help.html"> Need Help?</a></label>
               </div>
             </form>
           </div>

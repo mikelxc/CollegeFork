@@ -87,7 +87,7 @@
               <!-- <button type="submit" class="btn signin-btn btn-lg btn-primary">Sign Up</button> -->
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> I agree to the <a href="https://collegefork.com/terms.html"> terms and conditions.</a>
+                  <input class="form-check-input" type="checkbox"> I agree to the <a href="https://collegefork.com/term.html"> terms and conditions.</a>
                     <br><a href="https://collegefork.com/help.html"> Need Help?</a></label>
               </div>
             </form>
