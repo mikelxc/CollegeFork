@@ -67,7 +67,7 @@
         <div class="card signin-card">
           <div class="card-block">
             <img src="assets/brand/collegefork.svg" class="img-fluid signin-img">
-            <form class="sigin-form js-register">
+            <form onsubmit="return validate()" class="sigin-form js-register">
               <div class="form-group">
                 <input type="email" class="form-control" id="emailInput" required="required" placeholder="example@example.com">
               </div>
@@ -117,6 +117,18 @@
       </div>
     </div>
   </div>
+  <script>
+    function validate() {
+      const password =  document.getElementById("passwordInput");
+      const repassword = document.getElementById("repasswordInput");
+      if (password.value == repassword.value) {
+        return true;
+      } else {
+        alert("Passwords do not match!");
+        return false;
+      }
+    }
+  </script>
 <?php require_once "inc/footer.php"; ?>
 </body>
 
